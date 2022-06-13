@@ -1,0 +1,8 @@
+
+<%= form_with(model: [@shark, @post], local: true) do |form| %>
+  <%= form.label :content %>  <br>
+  <%= form.text_area :content %>  <br>
+  <br>
+  <br>
+  <%= form.submit %>
+<% end %>

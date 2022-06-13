@@ -1,0 +1,10 @@
+<% if flash[:notice] %>
+      <div id="alert">
+         <%= flash[:notice] %> 
+      </div>
+<% end %>
+
+<h1><%= @shark.name %></h1>
+
+<%= link_to "Add Post", new_shark_post_path(@shark) %>
+<%= link_to "See Posts", shark_posts_path(@shark) %>

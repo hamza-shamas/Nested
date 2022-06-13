@@ -1,0 +1,21 @@
+<h1>All Sharks</h1>
+<% @sharks.each do |shark| %>
+    <h2>Name: <%= shark.name %></h2>
+    <%= link_to "See Shark",shark %>
+    <%= button_to 'Delete',  shark_path(shark),  method: :delete %>
+    <%= link_to 'Delete', shark_path(shark), method: :delete %>
+    <hr />
+<% end %>
+<br>
+<%= link_to "Add Shark", new_shark_path %>
+
+ 
+<%# <%= image_tag "rail.png" %> 
+
+
+
+
+
+
+
+
