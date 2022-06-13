@@ -3,7 +3,7 @@
 <% i=0 %>
 <% @posts.each do |post| %>
     <%= i=i+1 %>
-    <p><b> Content of the post :</b><br> <%= post.content %></p>
+    <p><b> Post Content: </b><br> <%= post.content %></p>
     <%= link_to 'Edit Post', edit_shark_post_path(@shark, post) %>
     <%= link_to 'Delete Post', shark_post_path(@shark, post), method: :delete %>
     <%= button_to 'Delete',  shark_post_path(@shark, post),  method: :delete %>
